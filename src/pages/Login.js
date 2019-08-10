@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, StyleSheet, Image, TextInput, TouchableOpacity, Text } from 'react-native';
+import { KeyboardAvoidingView, StyleSheet, Image, TextInput, TouchableOpacity, Text } from 'react-native';
 
 import logo from '../assets/logo.png';
 
 export default function Login() {
   return (
-    <View sytle={styles.container}>
+    <KeyboardAvoidingView style={styles.container}>
       <Image source={logo} />
 
       <TextInput
@@ -19,7 +19,7 @@ export default function Login() {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 
